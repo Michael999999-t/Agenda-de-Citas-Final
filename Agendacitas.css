@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workforce Scheduler</title>
+
+<style>
+:root {
+  --bg: #f5f5f5;
+  --white: #ffffff;
+  --black: #111;
+  --gray: #888;
+  --green: #2ecc71;
+  --red: #e74c3c;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--black);
+}
+
+/* ---------- HOME PAGE ---------- */
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#home p {
+  color: var(--gray);
+  max-width: 500px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.btn-green {
+  background: var(--green);
+  color: white;
+}
+
+.btn-red {
+  background: var(--red);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ---------- APP LAYOUT ---------- */
+#app {
+  display: none;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+/* LEFT PANEL */
+.left {
+  width: 30%;
+  background: #eaeaea;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.worker-card {
+  background: var(--white);
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.worker-card button {
+  margin-top: 5px;
+}
+
+/* RIGHT PANEL */
+.right {
+... (190 lines left)

@@ -1,0 +1,112 @@
+<!DOCTYPE html><!--Define el documento como HTML5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Hace que la página sea funcional en dispositivos móviles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título de la página-->
+    <title>ShiftFlow | Modern Workforce Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Homepage.css"><!--Se conecta el archivo css para darle estilo a la página-->
+    
+</head>
+<!--Cuerpo de la página-->
+<body class="bg-slate-50 text-slate-900 font-sans">
+<!--Barra de navegación-->
+    <nav class="flex justify-between items-center px-10 py-6 bg-white shadow-sm">
+        <div class="text-2xl font-bold text-blue-700">WorkFlows</div><!--Nombre de la aplicación-->
+    </nav>
+<!--Sección principal-->
+    <section class="max-w-6xl mx-auto px-6 py-20 text-center animate-fade-in">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
+            Manage your team <span class="text-blue-600">without the chaos.</span>
+        </h1>
+        <!--Título principal resaltado en azul-->
+        <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+            The all-in-one platform for coordinating teams, organizing shifts, and simplifying workplace communication. 
+        </p>
+        <!--Descripción del servicio-->
+
+        <!--COntenedor para botón o efecto visual-->
+        <div class="relative inline-block group">
+            <!--Efecto al hacer hover-->
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+            
+        </div>
+    </section>
+
+    <!--Sección de beneficios-->
+    <section class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-slate-800">Why leading teams switch to ShiftFlow</h2>
+        <!--Grid de 3 columnas-->
+        <div class="grid md:grid-cols-3 gap-8">
+            <!--Tarjeta 1-->
+            <div class="group p-8 bg-white rounded-2xl shadow-sm border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <!--Icono-->
+                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <!--SVG ícono-->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Unmatched Precision</h3>
+                <p class="text-slate-600 leading-relaxed">Assign tasks to the exact minute. Our 24-hour view ensures every second of your team's day is optimized for success.</p>
+            </div>
+            <!--Tarjeta 2-->
+            <div class="group p-8 bg-white rounded-2xl shadow-sm border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Seamless Sync</h3>
+                <p class="text-slate-600 leading-relaxed">Communication is built into the schedule. Alerts and updates are sent instantly, keeping everyone on the same page.</p>
+            </div>
+            <!--Tarjeta3-->
+            <div class="group p-8 bg-white rounded-2xl shadow-sm border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Enterprise Security</h3>
+                <p class="text-slate-600 leading-relaxed">Manage permissions with ease. Your data is encrypted and backed up, so your schedules are always safe and available.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--Sección de caracteísticas-->
+    <section class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <!--Grid de 4 columnas en pantalla grande-->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!--Feature 1-->
+                <div class="feature-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">👥</div>
+                    <h3 class="text-xl font-bold mb-2">Worker Management</h3>
+                    <p class="text-slate-600">Track availability and expertise in a centralized database.</p>
+                </div>
+                <!--Feature 2-->
+                <div class="feature-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-4 text-2xl">🗓️</div>
+                    <h3 class="text-xl font-bold mb-2">Seamless Meetings</h3>
+                    <p class="text-slate-600">Coordinate team syncs without overlapping schedules.</p>
+                </div>
+                <!--Feature 3-->
+                <div class="feature-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-2xl">🕒</div>
+                    <h3 class="text-xl font-bold mb-2">24h Visibility</h3>
+                    <p class="text-slate-600">Monitor round-the-clock operations with a unified timeline.</p>
+                </div>
+                <!--Botón para iniciar la aplicación-->
+                 <button class="btn-start" onclick="startApp()">Start </button>
+                 <!--Script de JavaScript-->
+                 <script>
+function startApp() {
+    //Redirige a la página de agenda de citas cuando se presiona el botón
+    window.location.href = "Agenda.html"; 
+}
+</script>

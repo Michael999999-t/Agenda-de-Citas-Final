@@ -1,0 +1,38 @@
+
+ /*Animacion llamada fadeInUp*/
+ @keyframes fadeInUp {
+    /*Estado inicial del elemento*/
+            from { opacity: 0; transform: translateY(20px); }
+            /*Estado final del elemento*/
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /*Clase para aplicar la animación a los elementos*/
+        .animate-fade-in { animation: fadeInUp 0.8s ease-out forwards; }
+        /*Efecto de hover para las tarjetas de características*/
+        .feature-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        /*Estilo para el boton de start*/
+        .btn-start {
+        background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+        color: white;
+        padding: 16px 40px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+/*Efecto de hover para cuando el mouse pasa sobre el botón*/
+    .btn-start:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.4);
+        filter: brightness(1.1);
+    }
+    /*Efecto de active para cuando el botón es presionado*/
+    .btn-start:active {
+        transform: scale(0.98);
+        /*Hace que el boton sea pequeño para darle el efecto de click*/
+    }

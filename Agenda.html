@@ -1,0 +1,73 @@
+<!DOCTYPE html><!--Define el tipo de documento HTML5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Hace que la página responda en dispositivos móviles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo que aparece en el navegador-->
+    <title>Work Scheduler</title>
+    <link rel="stylesheet" href="citasag.css"><!--Enlace para conectar el archivo css-->
+</head>
+<body>
+    <!--Contenedor principal de toda la aplicación-->
+    <div class="main-wrapper animate-fade-in">
+        <!--Sidebar-->
+       <aside class="sidebar">
+    <div class="sidebar-header">
+        <h2>Add Worker</h2>
+        <!--Formulario para agregar un nuevo trabajador-->
+        <div class="form-group">
+            <input type="text" id="workerName" placeholder="Worker Name">
+            <button onclick="addWorker()">Create Profile</button>
+        </div>
+    </div>
+    <!--Linea divisora-->
+    <hr style="border: 0; border-top: 1px solid #334155; margin: 20px 0;">
+    <!--Seccion donde se muestran los trabajadores-->
+    <div class="worker-section">
+        <h3>Available Workers</h3>
+    <!--Lista donde se insertan los trabajadores-->
+        <ul id="workerList"></ul>
+    </div>
+    <!--Footer del sidebar-->
+    <div class="sidebar-footer">
+        <!--Boton para exportar datos en formato JSON-->
+        <button onclick="downloadJSON()" style="background: #475569; margin-top: 20px;">
+            Export Document
+        </button>
+    </div>
+</aside>
+        <!--Area principal del calendario-->
+        <main class="calendar-area">
+            <!--Controles para seleccionar el mes y mostrar el mes actual-->
+            <header class="calendar-controls">
+                <select id="monthSelect" onchange="renderCalendar()"></select>
+                <h2 id="currentMonthDisplay"></h2>
+            </header>
+            <!--Contenedor donde se renderiza el calendario-->
+            <div id="calendarGrid" class="calendar-grid"></div>
+            <!--Modal para asignar turnos-->
+            <div id="scheduleModal" class="modal">
+                <div class="modal-content">
+                    <!--Titulo del modal-->
+                    <h3>Schedule Shift</h3>
+                    <!--Texto para mostrar la fecha seleccionada-->
+                    <p id="selectedDateText"></p>
+                    <!--Dropdown para seleccionar el trabajador-->
+                    <select id="workerDropdown"></select>
+                    <!--Inputs para seleccionar la hora de inicio y fin del turno-->
+                    <input type="time" id="startTime" value="09:00">
+                    <input type="time" id="endTime" value="17:00">
+                    <!--Botones para guardar el turno o cancelar la acción-->
+                    <div class="modal-btns">
+                        <button onclick="saveShift()">Save Shift</button>
+                        <button onclick="closeModal()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--Conecta el archivo JavaScript donde esta la lógica de la aplicación-->
+    <script src="citas.js"></script>
+</body>
+</html>

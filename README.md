@@ -1,0 +1,2 @@
+# Agenda-de-Citas
+Esta aplicación web permite agendar citas de empleados en una compañía para planificar sus días y horas de trabajo. Incluso se pueden agendar reuniones con este calendario y para que no hayan conflictos con empleados que no puedan asistir puedes ver con el calendario los días que están disponibles y los que no para que al planifcarla no tengas problemas.
